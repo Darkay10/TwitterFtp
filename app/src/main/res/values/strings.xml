@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Twitter y FTP</string>
+    <string name="tvUsuario">Usuario</string>
+    <string name="tvPuntuacion">Puntuación</string>
+    <string name="eUsuario">Introduce tu usuario</string>
+    <string name="ePuntuacion">Introduce tu puntuación</string>
+    <string name="bEnviar">Comprobar puntuación</string>
+</resources>
