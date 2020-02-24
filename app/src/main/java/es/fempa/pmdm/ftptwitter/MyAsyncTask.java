@@ -20,6 +20,7 @@ public class MyAsyncTask extends AsyncTask<Integer, String, Boolean> {
     String user, pass, ip, tw;
     int puntos;
     MainActivity ma;
+    TwitPuntos tp;
 
     public MyAsyncTask(MainActivity a, int p, String u){
         ma = a;
@@ -29,6 +30,7 @@ public class MyAsyncTask extends AsyncTask<Integer, String, Boolean> {
         pass = "12345678a";
         puntos=p;
         tw=u;
+
     }
 
     @Override
@@ -84,6 +86,8 @@ public class MyAsyncTask extends AsyncTask<Integer, String, Boolean> {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            tp= new TwitPuntos();
+            tp.tweetPoints(puntos, tw);
         }
         else{
             publishProgress("No superaste el máximo, vuelve a intentarlo");
