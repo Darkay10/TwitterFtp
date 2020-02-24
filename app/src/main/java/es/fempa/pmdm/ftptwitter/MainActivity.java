@@ -1,18 +1,21 @@
 package es.fempa.pmdm.ftptwitter;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import org.apache.commons.net.ftp.FTPClient;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText eUsu;
     EditText ePunt;
     Button bEnv;
+    FTPClient ftp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
