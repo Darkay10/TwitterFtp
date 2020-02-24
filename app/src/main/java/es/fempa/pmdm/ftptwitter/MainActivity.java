@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
             toastRespuesta("Has dejado algún campo vacío");
         }
         else {
+            eUsu.setEnabled(false);
+            ePunt.setEnabled(false);
+            bEnv.setEnabled(false);
             mat = new MyAsyncTask(this, Integer.parseInt(p), u);
             mat.execute();
         }
